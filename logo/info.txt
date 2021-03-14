@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Salsa-Regular
+font link: https://fonts.google.com/specimen/Salsa
+font author: John Vargas Beltrán
+font author site: https://www.behance.net/vargasbeltran
+Slogan Font: Fanwood Text.otf
+
+icon designer: Luis Prado
+icon designer link: /Luis
+        
+{"bg":"#FEF2E5","icon-gradient-0":"#EB4C00","icon-gradient-1":"#F2A900","font":"#361C00","slogan":"#4a3014"}
+      
