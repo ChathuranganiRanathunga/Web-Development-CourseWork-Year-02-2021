@@ -1,0 +1,99 @@
+*{
+    box-sizing:border-box;
+}
+/*Initialize styles for grids*/
+:root{
+    --main-radius:10px;
+    --main-padding:3px;
+}
+
+/*Styles for navigation bar*/
+.navbar{
+    grid-area:navbar;
+    position: fixed;
+    font-family: monospace;
+    border-radius: var(--main-radius);
+    padding-top:var(--main-padding);
+}
+
+.navbar ul{
+    width:auto;
+    width:900px;
+    float:left;
+    margin-top:10px;
+    margin-left: 700px;
+    background-color: #B0553A;
+    box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.527);
+    text-align:center;
+    border-radius: 50px;
+}
+
+.navbar ul li{
+    list-style:none;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none; 
+    padding: 10px 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    transition:background-color 0.5s ease;
+    position:relative;
+}
+
+.sub-menu .sub-ul{
+    display: none;
+    width:120px;
+    border-radius:10PX;
+    position:absolute;
+    text-align:center;
+    margin-top:0;
+    margin-left: 0px;
+    background-color:#B0553A;
+}
+
+.sub-menu .sub-ul .li{
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    margin-left: -20px;
+    margin-right:20px;
+}
+
+.sub-menu .sub-ul .li .a{
+    text-decoration: none;
+    float:none;
+    padding:10px 0;
+    font-size:16px;
+    text-transform: uppercase;
+    font-weight:bold;
+    color:#fff;
+    transition:background-color 0.5s ease;
+
+}
+
+/*nav bar hover styles*/
+.navbar ul li a:hover{
+    background-color: rgba(71, 21, 21, 0.6);
+    color: rgba(248, 248, 248, 0.918);
+}
+
+.navbar ul :hover .sub-menu .sub-ul{
+    display:block;
+}
+
+.link{
+    font-size: 14px;
+    color: aliceblue;
+    list-style: none;
+}
+
+#about-link{
+    width:150px;
+    margin-left:350px;
+}
