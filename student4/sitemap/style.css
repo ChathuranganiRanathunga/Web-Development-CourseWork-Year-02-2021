@@ -21,7 +21,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: white;
+    color: #fbf3de;
 }
 
 .curveUpSvg {
@@ -38,8 +38,7 @@ body {
 }
 
 #shapes {
-    fill: #b0553a;
-    color: #fbf3de;
+    fill: none;
     stroke: #000000;
     stroke-opacity: "null";
     height: "53";
@@ -47,6 +46,26 @@ body {
     stroke-width: 3;
     cursor: pointer;
     font-size: 30px;
+}
+
+#home,
+#products,
+#quiz,
+#gallery,
+#aboutUs,
+#conatctUs,
+#ourTeam {
+    transition: 0.8s;
+}
+
+#home:hover,
+#products:hover,
+#quiz:hover,
+#gallery:hover,
+#aboutUs:hover,
+#contactUs:hover,
+#ourTeam:hover {
+    fill: #f4b30f;
 }
 
 .footer {

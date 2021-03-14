@@ -1,3 +1,4 @@
+//site map linking all pages
 document.getElementById("home").addEventListener("click", () => {
     document.location.href = "../../gallery";
 });
