@@ -14,6 +14,7 @@
     font-family: monospace;
     border-radius: var(--main-radius);
     padding-top:var(--main-padding);
+    z-index: 1;
 }
 
 .navbar ul{
