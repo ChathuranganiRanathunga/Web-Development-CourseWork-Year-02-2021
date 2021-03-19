@@ -22,7 +22,7 @@ body{
     height: 100%;
     overflow: auto;
     position:relative;
-    background-image: url("./img/travel02.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./img/travel02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -138,8 +138,9 @@ body{
 }
 
 .intro-paragraph{
-    padding-left: 600px;
-    padding-top: 100px;
+    padding-left: 550px;
+    padding-top: 200px;
     font-size: 36px;
     font-family: Ranchers;
+    color: white;
 }
