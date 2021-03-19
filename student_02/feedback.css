@@ -1,19 +1,24 @@
 /*Feedback form css*/
+*{
+    box-sizing:border-box;
+}
 
 body{
-    background-image: url("./img/t03.jpg");
+    background-image: url("./img/tf4.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
 }
 
-
 .titleFeedback{
     text-align: center;
     font-family: monospace;
+    color: white;
     font-size: 36px;
     font-weight: 900px;
+    padding-top: 25px;
 }
+
 .formDetails{
     font-family:monospace;
     font-weight: 700px;
@@ -21,16 +26,11 @@ body{
     margin:0 25% 0 25%;
 
 }
-.buttonSubmit{
-    padding-left: 100px;
-    width: 100px;
-    height:20px;
-}
+
 
 .feedbackForm{
     background-color: rgba(167, 201, 167, 0.75);
-    border: 1px solid lightpink;
-    border-radius: 3px;
+    border-radius: 10px;
     width: 80%;
     padding: 50px;
     margin:40px auto 40px auto; /*top right bottom left*/
@@ -71,6 +71,12 @@ body{
     font-family: monospace;
 }
 
+.buttonSubmit{
+    padding-left: 100px;
+    width: 100px;
+    height:20px;
+}
+
 .buttonSubmit button{
 
     background-color:rgba(221, 233, 57, 0.75);
@@ -87,10 +93,10 @@ body{
 }
 
 
-/*Rating Area*/
+/*Rating Area CSS*/
 .rate{
     float:left;
-    height: 80px;
+    height: 50px;
     padding: 0 10px;
     
 }
@@ -98,7 +104,7 @@ body{
 /*Radio Buttons of star ratings*/
 .rate:not(:checked)>input{
     position: absolute;
-    top:50;
+    top:30;
     visibility: hidden;
 }
 
@@ -108,16 +114,15 @@ body{
     width:1em;
     overflow:hidden;
     white-space:nowrap;
+    font-size:40px;
+    color:rgb(63, 124, 124);
     cursor:pointer;
-    font-size:30px;
-    color:darkslategray;
+    
 }
 
-
 /*selected star rating*/ 
-
 .rate > input:checked ~label{
-    color:#ffc700;
+    color:#d9fa1c;
 }
 
 .rate:not(:checked) > label:hoer,

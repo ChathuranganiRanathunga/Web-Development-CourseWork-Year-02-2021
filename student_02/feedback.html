@@ -15,7 +15,7 @@
     <!--navigation bar-->
     <div class="navbar">
       <ul>
-        <li><a class="link" href="Main.html">Home</a></li>
+        <li><a class="link" href="./student_02_main.html">Home</a></li>
         <li><a class="link" href="Products.html">Products</a></li>
         <li><a class="link" href="Quiz.html">Quiz</a></li>
 
@@ -25,8 +25,8 @@
           <a class="link" href="#">About US</a>
           <div class="sub-menu">
             <ul class="sub-ul">
-              <li class="li"><a href="#" class="a">Contact Us</a></li>
-              <li class="li"><a href="#" class="a">Team</a></li>
+              <li class="li"><a href="" class="a">Team</a></li>
+              <li class="li"><a href="./feedback.html" class="a">Feedback</a></li>
             </ul>
           </div>
         </li>
@@ -36,10 +36,13 @@
 
     <div class="formDetails">
 
-    <!--Customer Feedback form-->
+    <!--Page visitors Feedback form-->
     <h1 class="titleFeedback">Your Feedback</h1>
+    
 
-    <form class="feedbackForm" action="#" onsubmit="return validation()">
+      <!--display the error message-->
+
+    <form class="feedbackForm" action="#" onsubmit="return false">
         <div class="form-row">
           <label for="fName">First Name :</label>
           <input type="text" id="fName" name="fName" placeholder="First Name" />
@@ -62,7 +65,7 @@
 
         <!--Rating by Star-->
         <fieldset class="form-fieldset">
-          <legend>Rate</legend>
+          <legend class="rater">Rate</legend>
           
           <div class="rate" id="rates" onclick="start()">
             <input type="radio" id="star5" name="rate" value="Excellent" />
@@ -88,7 +91,7 @@
         </div>
 
         <div class="buttonSubmit">
-          <button type="button" onclick="validation()">Submit</button>
+          <input type="submit" value="Submit" onclick="validate()"/>
         </div>
     </form>
     </div>

@@ -2,10 +2,9 @@
     box-sizing:border-box;
 }
 
-
-
 .logoHola img{
     float: left;
+    position: fixed;
 	width: 200px;
 	height: auto;
 	margin-top:5px;
