@@ -1,23 +1,90 @@
 /*Feedback form css*/
+
+body{
+    background-image: url("./img/t03.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+
 .titleFeedback{
     text-align: center;
     font-family: monospace;
     font-size: 36px;
-    font-weight: 900pz;
+    font-weight: 900px;
 }
 .formDetails{
-    margin-left: 600px;
     font-family:monospace;
     font-weight: 700px;
     font-size: 24px;
+    margin:0 25% 0 25%;
+
 }
 .buttonSubmit{
+    padding-left: 100px;
     width: 100px;
     height:20px;
 }
 
+.feedbackForm{
+    background-color: rgba(167, 201, 167, 0.75);
+    border: 1px solid lightpink;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin:40px auto 40px auto; /*top right bottom left*/
+}
+
+.form-row{
+    margin-bottom: 40px;
+    display:grid;
+}
+
+.form-row input[type="text"],
+.form-row input[type="text"], 
+.form-row input[type = "email"],
+.form-row select{
+    border : 1px solid lightblue;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label{
+    margin-bottom: 15px;
+}
+
+.form-fieldset{
+    margin-bottom: 40px;
+}
+
+.form-fieldset legend{
+    margin-bottom: 15px;
+}
+.form-row textarea{
+    min-height: 150px;
+    border-radius: 10px;
+    resize:none;
+    margin-bottom: 10px;
+    padding: 7px;
+    font-family: monospace;
+}
+
+.buttonSubmit button{
+
+    background-color:rgba(221, 233, 57, 0.75);
+    font-size: 18px;
+    cursor:pointer;
+    border: none;
+    padding: 10px 4px;
+    border-radius: 10px;
+    width: 100px;
+    font-weight:700;
+    font-family: monospace;
 
 
+}
 
 
 /*Rating Area*/
@@ -25,7 +92,7 @@
     float:left;
     height: 80px;
     padding: 0 10px;
-    margin-left:200px;
+    
 }
 
 /*Radio Buttons of star ratings*/
@@ -46,11 +113,6 @@
     color:darkslategray;
 }
 
-
-/*Set Star icon for radio buttons*/
-.rate:not(:checked) > label:before{
-    content:'★';
-}
 
 /*selected star rating*/ 
 
