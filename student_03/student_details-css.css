@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	width: 100%;
+	height: 100%;
+}
+
+:root{
+	--main-radius:5px;
+	--main-padding:5px;
+}
+
+.body{
+	margin-top: 60px;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	overflow:auto;
+	position: relative;
+	animation: slide 15s infinite;
+	display: grid;
+	height: 100vh;
+	grid-template-areas: 
+		"navbar"
+		"information information information information"
+		"student-details-header student-details-header student-details-header student-details-header"
+		"student-details student-details student-details student-details"
+		"overlay overlay overlay overlay"
+		"footer";
+		
+}
+
+
+/*to make the bottom of the boxes containing developer details align*/
+
+
+#information{
+	grid-area: information;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: var(--main-radius);
+	
+}
+
+#student-details-header{
+	grid-area: student-details-header;
+	border-radius: var(--main-radius);
+	text-align: center;	
+}
+#student-details h2{
+	padding-top:0px;
+	color: #242066  ;
+	font-size:50px;
+	text-align:center;
+	-webkit-text-stroke: 2px #ffffff;
+}
+#student-details h2{
+	color:#fff;
+}
+#student-details{
+	height: auto;
+	width: 100%;
+	grid-area: student-details;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
+	text-align: center;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+.navbar{
+	grid-area: navbar;
+}
+
+.studentContainer {
+  display:inline-block;
+  position: relative;
+  width: 24%;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: 1s ease;
+  text-align: center;
+  grid-area: overlay;
+  
+}
+
+.studentContainer:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.details{
+	font-size: 20px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	grid-area: details;
+}
+
+.social-logo{
+	width: 30px;
+	height: 30px;
+	padding: 0 10px;
+	display: inline-block;
+}
+
+.social a{
+	text-decoration: none;
+}
+
+.social-container{
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	
+	
+}
+
+.social{
+	position: relative;
+	left: -50%;
+	
+}
+
+
+
+
+
+	
+
+
+
+
+
+
