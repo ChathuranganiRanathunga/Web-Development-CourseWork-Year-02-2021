@@ -1,3 +1,17 @@
+*{
+    
+}
+
+.logoHola img{
+	box-sizing:border-box;
+    float: left;
+    position: fixed;
+	width: 200px;
+	height: auto;
+	margin-top:5px;
+	margin-bottom:5px;
+    padding-left: 20px;
+}
 
 /*Initialize styles for grids*/
 :root{
@@ -6,14 +20,13 @@
 }
 
 /*Styles for navigation bar*/
-
 .navbar{
     grid-area:navbar;
     position: fixed;
     font-family: monospace;
     border-radius: var(--main-radius);
     padding-top:var(--main-padding);
-	z-index: 1;
+    z-index: 1;
 }
 
 .navbar ul{
@@ -22,7 +35,7 @@
     float:left;
     margin-top:10px;
     margin-left: 700px;
-    background-color: #B0553A;
+    background-color:rgba(173, 59, 6, 50%);
     box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.527);
     text-align:center;
     border-radius: 50px;
@@ -32,10 +45,10 @@
     list-style:none;
     display:inline-block;
     cursor:pointer;
-	
 }
 
 .navbar ul li a{
+	
     display: block;
     text-decoration: none; 
     padding: 10px 10px;
@@ -45,19 +58,18 @@
     color: #fff;
     transition:background-color 0.5s ease;
     position:relative;
-	
 }
 
 .sub-menu .sub-ul{
+	box-sizing:border-box;
     display: none;
     width:120px;
-    border-radius:10px;
+    border-radius:10PX;
     position:absolute;
     text-align:center;
     margin-top:0;
     margin-left: 0px;
-    background-color:#B0553A;
-	box-sizing:border-box;
+    background-color: rgba(173, 59, 6, 50%);
 }
 
 .sub-menu .sub-ul .li{
