@@ -117,9 +117,12 @@ footer{
 	grid-area: footer;
 	background-color: #FBF3DE;
 	margin-top: 2%;
+	font-family: monospace;
+	
 }
 .footer{
 	display: flex;
+	
 }
 
 .footer .box{
