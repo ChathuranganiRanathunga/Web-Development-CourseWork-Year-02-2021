@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Presentation Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="presentation.css">
+        <h1 style="margin-top: 5%; font-size: 80px;text-align: center; color: white;">WELCOME TO HOLA TRAVELS</h1>
+    </head>
+
+    <body>
+        <div class="presentation-container">
+            <div class="slides fade">
+                <div class="countdown">1</div>
+                <div class="text">Student 1 : Janitha Ahangama</div>
+            </div>
+              
+            <div class="slides fade">
+                <div class="countdown">2</div>
+                <div class="text">Student 2 : Chathurangani Ranathunga</div>
+            </div>
+              
+            <div class="slides fade">
+                <div class="countdown">3</div>
+                <div class="text">Student 3 : Himaranga Jothirathna </div>
+            </div>
+              
+            <div class="slides fade">
+                <div class="countdown">4</div>
+                <div class="text">Student 4 : Saranga Thathsara</div>
+            </div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+        </div>
+
+        <script>
+            var index = 0;
+            showNames();
+            
+            function showNames() {
+              var i;
+              var slides = document.getElementsByClassName("slides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              index++;
+              if (index > slides.length) {index = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[index-1].style.display = "block";  
+              dots[index-1].className += " active";
+              setTimeout(showNames, 1000);
+              setTimeout(function(){window.location.href="../student_02/student_02_main.html"},4000)
+            }
+            </script>
+    </body>
+</html>
