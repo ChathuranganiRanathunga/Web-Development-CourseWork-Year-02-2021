@@ -1,0 +1,148 @@
+/*Feedback form css*/
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url("../img/tf4.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.titleFeedback{
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-size: 36px;
+    font-weight: 900px;
+    padding-top: 25px;
+}
+
+.formDetails{
+    font-family:monospace;
+    font-weight: 700px;
+    font-size: 24px;
+    margin:0 25% 0 25%;
+
+}
+
+
+.feedbackForm{
+    background-color: rgba(167, 201, 167, 0.75);
+    border-radius: 10px;
+    width: 80%;
+    padding: 50px;
+    margin:40px auto 40px auto; /*top right bottom left*/
+}
+
+.form-row{
+    margin-bottom: 40px;
+    display:grid;
+}
+
+.form-row input[type="text"],
+.form-row input[type="text"], 
+.form-row input[type = "email"],
+.form-row select{
+    border : 1px solid lightblue;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+input[type=submit]{
+    width: 25%;
+	background-color: rgba(11, 10, 102, 0.7);
+	color: white;
+	padding: 10px 16px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 30px 0 5% 40%;
+ 	position: relative;
+}
+
+input[type=submit]:hover {
+    background-color: #2f0988;
+}
+
+#errorMessage{
+    float: center;
+	height: 60px;
+	margin: 2px;    
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 10px;
+    font-family: monospace;
+}
+
+.form-row label{
+    margin-bottom: 15px;
+}
+
+.form-fieldset{
+    margin-bottom: 40px;
+}
+
+.form-fieldset legend{
+    margin-bottom: 15px;
+}
+.form-row textarea{
+    min-height: 150px;
+    border-radius: 10px;
+    resize:none;
+    margin-bottom: 10px;
+    padding: 7px;
+    font-family: monospace;
+}
+
+
+/*Rating Area CSS*/
+.rate{
+    float:left;
+    height: 50px;
+    padding: 0 10px;
+    
+}
+
+/*Radio Buttons of star ratings*/
+.rate:not(:checked)>input{
+    position: absolute;
+    top:30;
+    visibility: hidden;
+}
+
+/*for unselected radio buttons*/
+.rate:not(:checked)>label{
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    font-size:40px;
+    color:rgb(63, 124, 124);
+    cursor:pointer;
+    
+}
+
+/*selected star rating*/ 
+.rate > input:checked ~label{
+    color:#d9fa1c;
+}
+
+.rate:not(:checked) > label:hoer,
+.rate:not(:checked) > label:hover ~ label{
+    color:#deb217;
+}
+.rate > input:checked +label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+
+.rate > label:hover ~ input :checked ~label{
+    color: #deb217;
+}

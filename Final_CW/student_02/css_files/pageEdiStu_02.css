@@ -1,0 +1,59 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   font-family: monospace;
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/pe02.jpg"); 
+   background-position: center;
+   
+}
+
+.pageEditorStu02{
+   text-align: center;
+   padding-top: 100px;
+   color: white;
+
+}
+
+.h_stu02{
+   font-size:40px;
+}
+.roll_stu02{
+   font-size:38px;
+}
+
+
+.column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+ }
+
+ .row:after {
+   content: "";
+   clear: both;
+ }
+
+ .name,.uowNum,.iitNum{
+    font-size: 28px;
+    font-weight: 300;
+    
+    
+ }
+
+ #stu02_details{
+    text-align: left;
+ } 
+.completedTasks{
+   text-align: left;
+
+}
+#ctasks{
+   font-size: 28px;
+   font-weight: 600;
+}
+
+.tasks{
+   font-size: 20px;
+}
