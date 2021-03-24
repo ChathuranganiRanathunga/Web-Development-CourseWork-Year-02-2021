@@ -43,24 +43,26 @@
 						<li>Each question is worth 2 point and this quiz worth 20 points total.</li>
 						<li>1 point will be deducted for each incorrect answer.</li>
 						<li>You have 10 seconds for each question.</li>
+						<li>Press Start Button to Start the Quiz.</li>
 					</ul>
 				</div>
 				<div class="quiz-container">
-					<button id="start" onclick="startQuiz()">Start</button>
+					<button id="start" class="btn" onclick="startQuiz()">Start</button>
 					<div id="quiz">
 						<div id="question"></div>
 						<div class="answers">
-							<span id="answer1" onclick="answerCheck('A')"></span>
-							<span id="answer2" onclick="answerCheck('B')"></span>
-							<span id="answer3" onclick="answerCheck('C')"></span>
+							<span id="answer1" class="choice" onclick="answerCheck('A')"></span>
+							<span id="answer2" class="choice" onclick="answerCheck('B')"></span>
+							<span id="answer3" class="choice" onclick="answerCheck('C')"></span>
 						</div>
 						<div id="questionMarker"></div>
 						<div id="timer">
 							<span id="counter"></span>
+							<div id="timerBar"></div>
 						</div>
-						<div id="score"></div>
 					</div>
 				</div>
+				<div id="score"></div>
 			</div>
 			<footer>
 				<div class="footer">
