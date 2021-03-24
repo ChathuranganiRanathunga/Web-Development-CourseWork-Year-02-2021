@@ -6,6 +6,7 @@
     <title>Feed back</title>
     <link rel="stylesheet" href="../student_02/navbar.css" />
     <link rel="stylesheet" href="../student_02/feedback.css" />
+    <script type="text/javascript" src="./feedback.js"></script>
   </head>
   <body>
     <div class="logoHola">
@@ -46,7 +47,7 @@
     <form class="feedbackForm" action="#" onsubmit="return false">
         <div class="form-row">
           <label for="fName">Full Name :</label>
-          <input type="text" id="fName" name="fName" placeholder="Full Name" required/>
+          <input type="text" id="fName" name="fName" placeholder="Full Name" onchange="validator()" onkeypress="validator()" required/>
         </div>
 
         <div class="form-row">
@@ -56,6 +57,7 @@
             id="email"
             name="email"
             placeholder="Email Address"
+            onchange="mailValidator()" onkeypress="mailValidator()"
           />
         </div>
 
@@ -87,7 +89,7 @@
         </div>
 
         <div class="buttonSubmit">
-          <input type="submit" value="Submit" onclick="validate()"/>
+          <input type="submit" value="Submit" onClick="validate()" />
         </div>
     </form>
     </div>
@@ -151,7 +153,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="../student_02/feedback.js"></script>
   </body>
 </html>
