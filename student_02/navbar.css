@@ -1,6 +1,17 @@
 *{
     box-sizing:border-box;
 }
+
+.logoHola img{
+    float: left;
+    position: fixed;
+	width: 200px;
+	height: auto;
+	margin-top:5px;
+	margin-bottom:5px;
+    padding-left: 20px;
+}
+
 /*Initialize styles for grids*/
 :root{
     --main-radius:10px;
@@ -23,7 +34,7 @@
     float:left;
     margin-top:10px;
     margin-left: 700px;
-    background-color: #B0553A;
+    background-color:rgba(173, 59, 6, 50%);
     box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.527);
     text-align:center;
     border-radius: 50px;
@@ -55,7 +66,7 @@
     text-align:center;
     margin-top:0;
     margin-left: 0px;
-    background-color:#B0553A;
+    background-color: rgba(173, 59, 6, 50%);
 }
 
 .sub-menu .sub-ul .li{
