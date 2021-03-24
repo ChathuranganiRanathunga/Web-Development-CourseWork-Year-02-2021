@@ -1,97 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feed back</title>
-    <link rel="stylesheet" href="../student_02/navbar.css" />
-    <link rel="stylesheet" href="../student_02/feedback.css" />
-    <script type="text/javascript" src="./feedback.js"></script>
+    <title>Page Editor Student 02</title>
+    <link rel="stylesheet" href="../student_02/pageEdiStu_02.css" />
+    <link rel="stylesheet" href="../student_02/navbar.css"/>
   </head>
   <body>
+<div>
     <div class="logoHola">
-      <img src="../logo/LogoH.png">
-    </div>
+        <img src="../logo/LogoH.png">
+      </div>
 
-    <!--navigation bar-->
-    <div class="navbar">
-      <ul>
-        <li><a class="link" href="./student_02_main.html">Home</a></li>
-        <li><a class="link" href="Products.html">Products</a></li>
-        <li><a class="link" href="Quiz.html">Quiz</a></li>
-
-        <li><a class="link" href="#">Gallery</a></li>
-        <li><a class="link" href="Sitemap.html">SiteMap</a></li>
-        <li>
-          <a class="link" href="#">About US</a>
-          <div class="sub-menu">
-            <ul class="sub-ul">
-              <li class="li"><a href="" class="a">Team</a></li>
-              <li class="li"><a href="./feedback.html" class="a">Feedback</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <br /><br /><br />
-
-    <div class="formDetails">
-
-    <!--Page visitors Feedback form-->
-    <h1 class="titleFeedback">Your Feedback</h1>
-    
-
-      <!--display the error message-->
-      <div class="errorMessage"></div>
-
-    <form class="feedbackForm" action="#" onsubmit="return false">
-        <div class="form-row">
-          <label for="fName">Full Name :</label>
-          <input type="text" id="fName" name="fName" placeholder="Full Name" onchange="validator()" onkeypress="validator()" required/>
-        </div>
-
-        <div class="form-row">
-          <label for="email">Email :</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-            onchange="mailValidator()" onkeypress="mailValidator()"
-          />
-        </div>
-
-        <!--Rating by Star-->
-        <fieldset class="form-fieldset">
-          <legend class="rater">Rate</legend>
+      <div class="navbar">
+        <ul>
+          <li><a class="link" href="Main.html">Home</a></li>
+          <li><a class="link" href="Products.html">Products</a></li>
+          <li><a class="link" href="Quiz.html">Quiz</a></li>
           
-          <div class="rate" id="rates" onclick="start()">
-            <input type="radio" id="star5" name="rate" value="Excellent" />
-            <label for="star5" tittle="Excellent">★</label>
 
-            <input type="radio" id="star4" name="rate" value="Very Good" />
-            <label for="star4" tittle="Very Good">★</label>
+          <li><a class="link" href="#">Gallery</a></li>
+          <li><a class="link" href="Sitemap.html">SiteMap</a></li>
+          <li><a class="link" href="#">About US</a>
+            <div class="sub-menu">
+              <ul class="sub-ul">
+                <li class="li"><a href="#" class="a">Team</a></li>
+                <li class="li"><a href="#" class="a">feedback</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-            <input type="radio" id="star3" name="rate" value="Good" />
-            <label for="star3" tittle="Good">★</label>
+    <div class="pageEditorStu02">
+      <div class="grid_01">
+        <h1 class="h_stu02">Page Editor Details</h1>
+        <h2 class="roll_stu02">Student 02</h2>
+      </div>
 
-            <input type="radio" id="star2" name="rate" value="Poor" />
-            <label for="star2" tittle="Poor">★</label>
-
-            <input type="radio" id="star1" name="rate" value="Worst" />
-            <label for="star1" tittle="Worst">★</label>
+      <div class="row">
+        <div class="column">
+          <img  class="student02img" src="../student_02/img/Student_02.jpg" width="250px"/>
+        </div>
+        <div class="column" id="stu02_details">
+          <p class="name">Name : R.S.W.B. Chathurangani Ranathunga</p>
+          <p class="uowNum">UOW Number : w1790948</p>
+          <p class="iitNum">IIT Number : 2019923</p>
+        </div>
+        <div class="completedTasks">
+          <p id="ctasks">Completed Tasks</p>
+          <div class="tasks">
+          <p>&nbsp; &nbsp; &#9758; &nbsp;Main Page(Home)</p>
+          <p>&nbsp; &nbsp; &#9758; &nbsp;Header and Footer</p>
+          <p>&nbsp; &nbsp; &#9758; &nbsp;Feedback Form</p>
+          <p>&nbsp; &nbsp; &#9758; &nbsp;Student 02 Page editor Page</p>
           </div>
-        </fieldset>
-
-        <div class="form-row">
-          <label for = "Any Comments">Any Comments :</label>
-          <textarea id = "Any Comments" name="Any Comments"></textarea>
         </div>
-
-        <div class="buttonSubmit">
-          <input type="submit" value="Submit" onClick="validate()" />
-        </div>
-    </form>
+      </div>
     </div>
 
     <footer>
@@ -153,5 +119,8 @@
         </div>
       </div>
     </footer>
+
+
+</div>
   </body>
 </html>

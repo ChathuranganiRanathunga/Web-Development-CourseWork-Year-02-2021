@@ -5,21 +5,15 @@ function validator(){
     //to display the error message regarding this
     var text; 
 
-    var LName = document.getElementById("LName").value;
-    var errorMessage= document.getElementById("errorMessage");
-    //to display the error message regarding this
-    var text; 
-
-
-    //validate the user entering name
-    if(fName.length<4 || LName.length<4){
-        text="Please enter an valid name";
+    //validate the user entering name by name length
+    if(fName.length<4){ 
+        text="Your First Name must include at least 3 letters";
         errorMessage.innerHTML = text;
         document.getElementById("errorMessage").style.background = "#FD4343";
         document.getElementById("errorMessage").style.width = "30%";
         return(false);
         
-        }else if(fName.length>=3 && LName.length>=3){
+        }else if(fName.length>=3){
             text="";
             errorMessage.innerHTML =text;
             document.getElementById("errorMessage").style.background='none';
@@ -34,18 +28,18 @@ function mailValidator(){
     var errorMessage=document.getElementById("errorMessage");
     var text;
 
-    var mailValidator = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var mailValidation = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
 
     //check the mail validity that user entered
-    if(mailValidator.test(email)=== false){
-        text="Please enter an valid email";
+    if(mailValidation.test(email)=== false){
+        text="You entered invalid mail address.Please enter valid mail.";
         errorMessage.innerHTML = text;
         document.getElementById("errorMessage").style.background="#FD4343";
         document.getElementById("errorMessage").style.width = "30%";
         return(false);
 
-    }else if(mailValidator.test(email)===true){
+    }else if(mailValidation.test(email)===true){
         text="";
         errorMessage.innerHTML = text;
         document.getElementById("errorMessage").style.background = 'none';
@@ -59,7 +53,6 @@ function mailValidator(){
 function validate(){
     //getting form input values from the user
     var fName= document.getElementById("fName").value;
-    var LName= document.getElementById("LName").value;
     var email= document.getElementById("email").value;
 
     //get ratings
@@ -89,7 +82,7 @@ function validate(){
 
 
     //print error message clicked submit button when all input areas are empty
-    if(fName.length <4 && LName.length<4 && mailValidator.test(email)===false && (rateExcellent===0 && rateVeryGood===0 && rateGood===0 && ratePoor===0 && rateWorst===0)){
+    if(fName.length <4 && mailValidator.test(email)===false && (rateExcellent===0 && rateVeryGood===0 && rateGood===0 && ratePoor===0 && rateWorst===0)){
         text="Please fill the form before click submit button.";
         errorMessage.innerHTML =text;
         document.getElementById("errorMessage").style.background = "#FD4343";
@@ -103,7 +96,7 @@ function validate(){
         document.getElementById("errorMessage").style.width = "30%";
         return(false);
     
-    }else if(fName.length<4 && LName.length<4){
+    }else if(fName.length<4){
         text="Name must have more than three letters.Please give a valid name.";
         errorMessage.innerHTML =text;
         document.getElementById("errorMessage").style.background = "#FD4343";
