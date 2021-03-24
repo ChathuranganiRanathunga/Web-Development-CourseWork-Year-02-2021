@@ -14,7 +14,7 @@ body{
 
 .body{
 	grid-area: body;
-	
+	margin-top: 60px;
 }
 .container{
 	width: 100%;
@@ -44,6 +44,7 @@ body{
 	margin: 0;
 	margin-top: 40px;
 	font-size: 28px;
+	text-transform: uppercase;
 }
 
 .quiz-heading h2{
@@ -158,7 +159,6 @@ button:active{
 	
 }
 #answer3{
-	
 	margin-right: 20px;
 	font-size: 20px;
 	
@@ -185,6 +185,9 @@ button:active{
 
 #timer{
 	color: white;
+	font-size: 25px;
+	margin-top: 30px;
+	font-weight: 600;
 }
 
 #score{

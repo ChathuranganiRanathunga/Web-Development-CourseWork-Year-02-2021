@@ -109,7 +109,7 @@ function questionCounter(){
 		document.getElementById("time"+count).style.backgroundColor = "transparent";
 		count++
 	}else{
-		markIncorrect();
+		markTimeOut();
 		proceedToNext();
 		
 	}
@@ -154,6 +154,10 @@ function markCorrect(){
 
 function markIncorrect(){
 	document.getElementById(currentQuestion).style.backgroundColor = "red";
+}
+
+function markTimeOut(){
+	document.getElementById(currentQuestion).style.backgroundColor = "yellow";
 }
 
 function endQuiz(){
