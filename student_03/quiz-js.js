@@ -1,4 +1,5 @@
 var startButton = document.getElementById("start");
+var quiz = document.getElementById("quiz");
 var questionField = document.getElementById("question");
 var answerA = document.getElementById("answer1");
 var answerB = document.getElementById("answer2");
@@ -6,6 +7,7 @@ var answerC = document.getElementById("answer3");
 var counter = document.getElementById("counter");
 var showScore = document.getElementById("score");
 var questionMaker = document.getElementById("questionMarker");
+var timerBar = document.getElementById("timerBar");
 
 var questions = [
 	{
@@ -71,17 +73,24 @@ var questions = [
 	}
 ]
 
-var currentQuestion = 0;
+var currentQuestion;
 var lastQuestion = questions.length-1;
 var count = 0;
 var questionTime = 10;
 var timer;
 var score = 0;
 function startQuiz(){
-	start.parentNode.removeChild(start);
+	currentQuestion = 0;
+	score = 0;
+	showScore.innerHTML = "";
+	start.style.display = "none";
+	quiz.style.display = "block";
+	showScore.style.display = "none";
 	setQuestion();
+	setTimerBar();
 	questionCounter();
 	setMarker();
+	
 	timer = setInterval(questionCounter,1000);
 }
 
@@ -96,11 +105,13 @@ function setQuestion(){
 
 function questionCounter(){
 	if (count<questionTime){
-		counter.innerHTML = count;
+		counter.innerHTML = questionTime-count-1;
+		document.getElementById("time"+count).style.backgroundColor = "transparent";
 		count++
 	}else{
-		proceedToNext();
 		markIncorrect();
+		proceedToNext();
+		
 	}
 }
 
@@ -109,9 +120,14 @@ function proceedToNext(){
 	if(currentQuestion < lastQuestion){
 		currentQuestion++;
 		setQuestion();
+		counter.innerHTML = "10";
+		timerBar.querySelectorAll('*').forEach(n => n.remove());
+		setTimerBar();
 	}else{
 		clearInterval(timer);
-		showScore.innerHTML = score;
+		setScore();
+		endQuiz();
+		
 	}
 }
 
@@ -128,7 +144,7 @@ function answerCheck(answer){
 
 function setMarker(){
 	for(var qNumber = 0; qNumber<=lastQuestion; qNumber++){
-		questionMaker.innerHTML += "<span class='marker' id="+ qNumber + "></span>"
+		questionMaker.innerHTML += "<span class='marker' id="+ qNumber + "></span>";
 	}
 }
 
@@ -138,4 +154,32 @@ function markCorrect(){
 
 function markIncorrect(){
 	document.getElementById(currentQuestion).style.backgroundColor = "red";
+}
+
+function endQuiz(){
+	quiz.style.display = "none";
+	start.style.display = "inline-block";
+	questionMaker.innerHTML = "";
+	showScore.style.display = "block";
+	start.innerText = "Retake"; 
+	timerBar.innerHTML = "";
+	
+}
+
+function setScore(){
+	if(score>=15){
+		showScore.style.backgroundColor = "rgba(64, 255, 31, 50%)";
+	}else if(score>=5){
+		showScore.style.backgroundColor = "rgba(255, 233, 31, 50%)";
+	}else{
+		showScore.style.backgroundColor = "rgba(255, 53, 31, 50%)";
+	}
+	showScore.innerHTML += questionMaker.innerHTML + "<br>";
+	showScore.innerHTML += "Your Score is : " + score;
+}
+
+function setTimerBar(){
+	for(var time=questionTime-1; time>=0; time--){
+		timerBar.innerHTML += "<span class='timer-block' id=time"+time+"></span>";
+	}
 }
