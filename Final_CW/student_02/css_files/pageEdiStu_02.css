@@ -4,7 +4,7 @@
 
 body{
    font-family: monospace;
-   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../student_02/img/pe02.jpg"); 
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/pe02.jpg"); 
    background-position: center;
    
 }

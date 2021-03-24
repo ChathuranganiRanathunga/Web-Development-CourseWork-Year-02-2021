@@ -1,0 +1,277 @@
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	margin: 0;
+  font-family: monospace;
+  
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+	overflow: hidden;
+	background-image: url(img/travel02.jpg);
+  }
+  
+
+
+  /* Style the content */
+  .content {
+	background-color: #ddd;
+  }
+
+
+  #logo{
+    grid-area: logo;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-top: px;
+    margin-left: 20px;
+}
+
+.navbar ul{
+	float: left;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 4px grey;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.cart{
+  padding: 5px;
+  background-color: rgb(250, 204, 0);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cart ion-icon{
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+}
+image{
+    display: block;
+    width: 100%;
+    height: 50px;
+    opacity: 0.7;
+}
+.grid-container{
+	display: grid;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/travel02.jpg");
+  grid-template-areas:'image image image-content image-content image-content image-content image-content image-content image image'
+                        'section-two section-two section-two section-two section-two section-two section-two section-two section-two  '
+						            'section-three section-three section-three section-three section-three section-three section-three section-three section-three '
+						            'footer footer footer footer footer footer footer footer'
+}
+ .tablink {
+    grid-area: section-two;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 34px 16px;
+    font-size: 17px;
+    width: 25%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px grey;
+    transition: background-color 0.5s ease;
+  }
+  .tablink:hover {
+    background-color: #777;
+  }
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    grid-area: section-two;
+    color:black;
+    display: none;
+    padding: 20px 40px;
+    height: 100px;
+  }
+  .image-content{
+      position: absolute;
+      bottom: 300px; /* At the bottom. Use top:0 to append it to the top */
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1; /* Grey text */
+      width: 100%; /* Full width */
+      padding-right: 20px;
+      padding:100px; 
+    
+  }
+#comforts{background-color: white;}
+#makeup{background-color: white;}
+#luggages{background-color:white;}
+#security {background-color: white;}
+.container{
+    grid-area: section-two;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin:3px;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    padding: 20px 20px;
+	margin: 25px;
+	background-color: #FFF;
+  margin-left: 62.5px;
+  padding-bottom: 3%;
+  }
+  .price{
+      color:grey;
+      font-size: 22px;
+      color: #000;
+  }
+  .container a{
+    border: none;
+    outline: 0;
+    padding: 20px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 25%;
+    padding-right: 25%;
+
+  }
+  .container a:hover{
+    color: #fff;
+    background-color: rgb(48, 46, 46);
+  }
+  .container .description{
+    margin-bottom: 15px;
+  }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.cartModal-content{
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header,
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #df8106f5;
+  color: white;
+  font-size: 10px;
+}
+button.delete-item.btn.btn-danger {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 5px;
+  background: #9c3100;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#cart-table{
+  margin: auto;
+  display: flex;
+    justify-content: start;
+    margin-left: 6px;
+}
+div.form-inline {
+  display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px
+}
+.pay-button{
+    color: #fff;
+    background-color: #d84400;
+    background-image: none;
+    border-color: #860000
+}
+.cart-details{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #000;
+  margin-top: 82px;
+    position: absolute;
+}
+.cart{
+  background-color: rgb(199, 32, 3);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart:hover {
+  background-color: #000;
+}
+div#validation{
+    justify-content: center;
+    background: #e89797ad;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid rgb(201, 47, 1);
+    border-radius: 5px;
+    display: none;
+}
+#content2{
+  display: none;
+  justify-content: center;
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

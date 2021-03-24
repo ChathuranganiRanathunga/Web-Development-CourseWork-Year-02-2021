@@ -1,17 +1,13 @@
-*{
-    
-}
 
 .logoHola img{
 	box-sizing:border-box;
     float: left;
     position: fixed;
-	width: 200px;
+	width: 300px;
 	height: auto;
 	margin-top:5px;
 	margin-bottom:5px;
     padding-left: 20px;
-    z-index: 1;
 }
 
 /*Initialize styles for grids*/

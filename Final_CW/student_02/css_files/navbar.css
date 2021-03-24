@@ -1,9 +1,8 @@
 *{
-    
+    box-sizing:border-box;
 }
 
 .logoHola img{
-	box-sizing:border-box;
     float: left;
     position: fixed;
 	width: 200px;
@@ -11,7 +10,6 @@
 	margin-top:5px;
 	margin-bottom:5px;
     padding-left: 20px;
-    z-index: 1;
 }
 
 /*Initialize styles for grids*/
@@ -35,9 +33,9 @@
     width:900px;
     float:left;
     margin-top:10px;
-    margin-left: 700px;
+    margin-left: 650px;
     background-color:rgba(173, 59, 6, 50%);
-    box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.527);
+    box-shadow: 1px 2px 2px rgba(88, 88, 88, 0.945);
     text-align:center;
     border-radius: 50px;
 }
@@ -49,7 +47,6 @@
 }
 
 .navbar ul li a{
-	
     display: block;
     text-decoration: none; 
     padding: 10px 10px;
@@ -62,7 +59,6 @@
 }
 
 .sub-menu .sub-ul{
-	box-sizing:border-box;
     display: none;
     width:120px;
     border-radius:10PX;
@@ -113,17 +109,14 @@
     width:150px;
     margin-left:350px;
 }
-
 footer{
 	grid-area: footer;
+    font-family: monospace;
 	background-color: #FBF3DE;
 	margin-top: 2%;
-	font-family: monospace;
-	
 }
 .footer{
 	display: flex;
-	
 }
 
 .footer .box{
@@ -173,7 +166,7 @@ footer{
 }
 
 .footer-content a{
-	text-decoration: none;
+	text-decoration: none; 
 }
 
 .footer-social{
