@@ -4,15 +4,9 @@ function validator(){
     var errorMessage= document.getElementById("errorMessage");
     //to display the error message regarding this
     var text; 
-/*
-    var LName = document.getElementById("LName").value;
-    var errorMessage= document.getElementById("errorMessage");
-    //to display the error message regarding this
-    var text; */
-
 
     //validate the user entering name by name length
-    if(fName.length<4){
+    if(fName.length<4){ 
         text="Your First Name must include at least 3 letters";
         errorMessage.innerHTML = text;
         document.getElementById("errorMessage").style.background = "#FD4343";
