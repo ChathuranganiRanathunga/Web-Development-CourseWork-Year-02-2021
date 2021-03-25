@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+body {
+    background-color: #fbf3de;
+}
+
+.cover {
+    background: #000000 center/cover url(./assets/images/cover2.jpg);
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.cover h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fbf3de;
+}
+
+.curveUpSvg {
+    fill: #fbf3de;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.site-map {
+    height: 75vh;
+}
+
+#shapes {
+    fill: none;
+    stroke: #000000;
+    stroke-opacity: "null";
+    height: "55";
+    width: "168";
+    stroke-width: 3;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#home,
+#products,
+#quiz,
+#gallery,
+#aboutUs,
+#feedback,
+#team {
+    transition: 0.8s;
+}
+
+#home:hover,
+#products:hover,
+#quiz:hover,
+#gallery:hover,
+#aboutUs:hover,
+#feedback:hover,
+#team:hover {
+    fill: #f4b30f;
+    font-size: 30.5px;
+    font-weight: 600;
+}
+
+#site-map-lines line {
+    stroke-width: 3;
+    stroke: #000000;
+}

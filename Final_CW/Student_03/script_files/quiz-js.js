@@ -90,7 +90,6 @@ function startQuiz(){
 	setTimerBar();
 	questionCounter();
 	setMarker();
-	
 	timer = setInterval(questionCounter,1000);
 }
 
@@ -172,11 +171,11 @@ function endQuiz(){
 
 function setScore(){
 	if(score>=15){
-		showScore.style.backgroundColor = "rgba(64, 255, 31, 50%)";
+		showScore.style.backgroundColor = "rgba(64, 255, 31, 25%)";
 	}else if(score>=5){
-		showScore.style.backgroundColor = "rgba(255, 233, 31, 50%)";
+		showScore.style.backgroundColor = "rgba(255, 233, 31, 25%)";
 	}else{
-		showScore.style.backgroundColor = "rgba(255, 53, 31, 50%)";
+		showScore.style.backgroundColor = "rgba(255, 53, 31, 25%)";
 	}
 	showScore.innerHTML += questionMaker.innerHTML + "<br>";
 	showScore.innerHTML += "Your Score is : " + score;
@@ -187,3 +186,4 @@ function setTimerBar(){
 		timerBar.innerHTML += "<span class='timer-block' id=time"+time+"></span>";
 	}
 }
+

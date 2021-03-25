@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fbf3de;
+}
+
+.cover {
+    background: #000000 center/cover url(../gallery/assets/images/cover.jpg);
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.curveUpSvg {
+    fill: #fbf3de;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 7px;
+    color: white;
+    text-shadow: 3px 3px 6px #000000;
+}
+
+.column img {
+    transition: transform 0.5s;
+}
+
+
+/* gallery css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+/* gallery  */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+/* Style the images inside the grid */
+
+.column img {
+    cursor: pointer;
+    width: 250px;
+    height: 300px;
+}
+
+.column img:hover {
+    transform: scale(1.5);
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* The expanding image container */
+
+.container {
+    position: relative;
+    display: none;
+}
+
+
+/* Expanding image text */
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fbf3de;
+    font-size: 20px;
+}
+
+
+/* Closable button inside the expanded image */
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fbf3de;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: #b0553a;
+    border: none;
+    color: #fbf3de;
+    text-align: center;
+    font-size: 24px;
+    padding: 7px;
+    width: 180px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 9px #999;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#paraText {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#choseColor {
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+#selectId {
+    font-size: 24px;
+}
+
+#bgColorChange {
+    margin: 100px 450px;
+}

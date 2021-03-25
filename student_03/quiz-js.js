@@ -90,7 +90,6 @@ function startQuiz(){
 	setTimerBar();
 	questionCounter();
 	setMarker();
-	
 	timer = setInterval(questionCounter,1000);
 }
 
@@ -187,3 +186,4 @@ function setTimerBar(){
 		timerBar.innerHTML += "<span class='timer-block' id=time"+time+"></span>";
 	}
 }
+startButton.addEventListener = ("click",startQuiz);
