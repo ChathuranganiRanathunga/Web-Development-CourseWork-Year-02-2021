@@ -1,0 +1,65 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   font-family: monospace;
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/page-editor-bg.jpg"); 
+   background-position: center;
+   background-repeat: no-repeat;
+	background-size: cover;
+   
+}
+
+.student2PageEditor{
+   text-align: center;
+   padding-top: 100px;
+   color: white;
+
+}
+
+.page-editor-heading{
+   font-size:40px;
+}
+.student-roll{
+   font-size:38px;
+}
+
+
+.column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+   
+ }
+#img-column{
+	height: 400px;
+}
+
+ .row:after {
+   content: "";
+   clear: both;
+ }
+
+ .name,.uowNum,.iitNum{
+    font-size: 28px;
+    font-weight: 300;
+    
+    
+ }
+
+ #stu02_details{
+    text-align: left;
+ } 
+.completedTasks{
+   text-align: left;
+
+}
+#ctasks{
+   font-size: 28px;
+   font-weight: 600;
+}
+
+.tasks{
+   font-size: 20px;
+}
